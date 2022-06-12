@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import clonedeep from 'lodash.clonedeep';
 import { TypeEditStatusProps } from "./MinionEditStatus";
 import LightModeIcon from '@mui/icons-material/LightMode';
+import DeviceThermostatIcon from '@mui/icons-material/DeviceThermostat';
 import { Stack, Theme, useMediaQuery } from "@mui/material";
 import BrightnessHighIcon from '@mui/icons-material/BrightnessHigh';
 import BrightnessLowIcon from '@mui/icons-material/BrightnessLow';
@@ -18,27 +19,27 @@ import { ThemeTooltip } from "../../global/ThemeTooltip";
 const presentsMarks = [
 	{
 		value: 1,
-		label: '1%',
+		label: '1',
 	},
 	{
 		value: 20,
-		label: '20%',
+		label: '20',
 	},
 	{
 		value: 40,
-		label: '40%',
+		label: '40',
 	},
 	{
 		value: 60,
-		label: '60%',
+		label: '60',
 	},
 	{
 		value: 80,
-		label: '80%',
+		label: '80',
 	},
 	{
 		value: 100,
-		label: '100%',
+		label: '100',
 	},
 ];
 
@@ -242,8 +243,8 @@ export function LightEditStatus(props: TypeEditStatusProps) {
 						justifyContent="space-between"
 						alignItems="flex-start"
 					>
-						<LightModeIcon style={{ fontSize: props.smallFontRatio * 0.9, color: getModeColor(props.isOn && !disabled, theme) }} />
-						<Typography style={{ fontSize: props.smallFontRatio * 0.9, color: getModeColor(props.isOn && !disabled, theme) }}>%</Typography>
+						<DeviceThermostatIcon style={{ fontSize: props.smallFontRatio * 0.9, color: getModeColor(props.isOn && !disabled, theme) }} />
+						<Typography style={{ fontSize: props.smallFontRatio * 0.9, color: getModeColor(props.isOn && !disabled, theme) }}>°C</Typography>
 					</Grid>
 				</div>
 			</Grid>

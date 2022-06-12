@@ -1,5 +1,5 @@
 import { Grid, Typography, useTheme } from "@material-ui/core";
-import { Minion } from "../../infrastructure/generated/api";
+import { Minion, BluetoothMinion } from "../../infrastructure/generated/api";
 import '../../theme/styles/components/minions/minionsOverview.scss';
 import { useHistory, useParams } from "react-router-dom";
 import { DashboardRoutes } from "../../infrastructure/consts";
@@ -12,6 +12,11 @@ import { MinionTimeoutOverview } from "./MinionTimeoutOverview";
 
 interface MinionOverviewProps {
 	minion: Minion;
+	ratio: number;
+}
+
+interface BluetoothMinionOverviewProps {
+	minion: BluetoothMinion;
 	ratio: number;
 }
 

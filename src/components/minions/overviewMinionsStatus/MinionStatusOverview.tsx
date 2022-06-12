@@ -6,6 +6,7 @@ import { Fragment } from "react";
 import '../../../theme/styles/components/minions/minionsStatusOverview.scss';
 import { getModeColor } from "../../../logic/common/themeUtils";
 import LightModeIcon from '@mui/icons-material/LightMode';
+import DeviceThermostatIcon from '@mui/icons-material/DeviceThermostat';
 import InvertColorsIcon from '@mui/icons-material/InvertColors';
 import PaletteIcon from '@mui/icons-material/Palette';
 import { RollerDir } from "./RollerDir";
@@ -192,8 +193,8 @@ function LightOverview(props: TypeStatusOverviewProps) {
 					justifyContent="space-between"
 					alignItems="flex-start"
 				>
-					<LightModeIcon style={{ fontSize: props.smallFontRatio * 0.9, color: getModeColor(props.isOn, theme) }} />
-					<Typography style={{ fontSize: props.smallFontRatio * 0.9, color: getModeColor(props.isOn, theme) }}>%</Typography>
+					<DeviceThermostatIcon style={{ fontSize: props.smallFontRatio * 0.9, color: getModeColor(props.isOn, theme) }} />
+					<Typography style={{ fontSize: props.smallFontRatio * 0.9, color: getModeColor(props.isOn, theme) }}>°C</Typography>
 
 				</Grid>
 			</div>
